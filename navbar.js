@@ -13,9 +13,23 @@ const toggle = () => {
     close.style.display = 'flex';
     burguer.style.display = 'none';
 
-    return menu.classList.contains('open') ?
-    html.classList.add('no-scroll-x') :
-    html.classList.remove('no-scroll-x');
+    dropdown.addEventListener('mouseenter', () => {
+      if (menu.classList.contains('open')){
+        categories.classList.add('no-scroll')
+      }
+        categories.classList.remove('no-scroll');
+
+    });
+
+    dropdown.addEventListener('mouseleave', () => {
+      if (menu.classList.contains('open')){
+        categories.classList.add('no-scroll')
+      } else {
+        categories.classList.remove('no-scroll');
+      }
+    });
+
+
   }
 
   const toggleClose = () => {
