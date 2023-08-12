@@ -1,59 +1,59 @@
 
 /* paleta de cores: #dab028 e #1f1f1f */
 
-*{
-  
-    /*Resetando as configurações*/
-      margin: 0; 
-      padding: 0; 
-      font-family: 'Open Sans', sans-serif;
-      box-sizing: border-box; 
-      -moz-box-sizing: border-box; 
-      -webkit-box-sizing: border-box; 
-      
+footer{
+
+  /*Resetando as configurações*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
   }
-  
+
   /*Reset basico das midias*/
 
-.main_footer          { 
+.main_footer {
 
-	background-color:#dab028; 
-	color:#fff; 
-	font-size:0.875em; 
+	background-color:#dab028;
+	color:#fff;
+	font-size:0.875em;
 }
 
 .main_footer .content { float:left; width:90%; margin:0 5%; padding: 5em 0; }
 .container { float:left; width:100%; text-decoration:none}
 
-.colfooter { 
+.colfooter {
 
-	width:100%; 
-	height:auto; 
-	float:left; 
+	width:100%;
+	height:auto;
+	float:left;
 	margin-bottom:2em;
- 
+
 
 }
 
-.colfooter ul        { width:100%; float:left; }
+.colfooter ul        { width:100%; float:left; padding: 0;}
 .colfooter ul li     { list-style: none !important; padding:0.2em 0em; }
 .colfooter ul li a   { text-decoration: none; color:#ffffff; font-size:1em; }
 .colfooter ul li a i { font-size:0.5em; }
 .colfooter ul li a:hover { color: #1f1f1f; transition: 0.3s border ease-in;}
 
-.colfooter .titleFooter   { 
+.colfooter .titleFooter   {
 
 	font-family: 'Open Sans', sans-serif;
-	font-size:1.3em; 
-	color:#1f1f1f; 
-	padding-bottom: 0.5em; 
-	margin-bottom:0.5em; 
+	font-size:1.3em;
+	color:#1f1f1f;
+	padding-bottom: 0.5em;
+	margin-bottom:0.5em;
 	border-bottom:1px #1f1f1f solid;
     text-decoration: none;
 }
 
 
-.colfooter p  { font-family: 'Open Sans', sans-serif; color:#ffffff; font-size:1em; height:25px;} 
+.colfooter p  { font-family: 'Open Sans', sans-serif; color:#ffffff; font-size:1em; height:25px;}
 
 .botao{
 
@@ -66,10 +66,10 @@
   text-decoration: none;
   display:inline-block;
   margin-right:7px;
-  
+
 }
 .botao::before {
-  
+
   content: '';
   position: absolute;
   bottom: 50%;
@@ -88,7 +88,7 @@
   transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
 }
 .botao:hover::before {
-  
+
   -webkit-transform-origin: right top;
   -ms-transform-origin: right top;
   transform-origin: right top;
@@ -111,7 +111,7 @@
     transition: all .4s ease-in-out;
     background: transparent!important;
     z-index:10;
-    
+
 }
 .botao:hover{
 
@@ -126,8 +126,8 @@
     background: #262626;
     position: absolute;
     -ms-transform: skewX(-15deg);
-    -webkit-transform: skewX(-15deg); 
-    transform: skewX(-15deg);   
+    -webkit-transform: skewX(-15deg);
+    transform: skewX(-15deg);
     left: -10%;
     opacity: 1;
     top: 0;
@@ -137,9 +137,9 @@
     -webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
     transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
     box-shadow:2px 0px 14px rgba(0,0,0,.6);
-} 
+}
 .botao::after {
- 
+
     content: '';
     width: 0%;
     height: 100%;
@@ -147,8 +147,8 @@
     background: #e3c86f;
     position: absolute;
     -ms-transform: skewX(-15deg);
-    -webkit-transform: skewX(-15deg); 
-    transform: skewX(-15deg);   
+    -webkit-transform: skewX(-15deg);
+    transform: skewX(-15deg);
     left: -10%;
     opacity: 0;
     top: 0;
@@ -160,7 +160,7 @@
     box-shadow: 2px 0px 14px rgba(0,0,0,.6);
 }
 .botao:hover::before, .botao:hover::before{
-   
+
     opacity:1;
     width: 120%;
 
