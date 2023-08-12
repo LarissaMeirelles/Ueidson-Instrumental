@@ -13,23 +13,17 @@ const toggle = () => {
     close.style.display = 'flex';
     burguer.style.display = 'none';
 
-    dropdown.addEventListener('mouseenter', () => {
-      if (menu.classList.contains('open')){
-        categories.classList.add('no-scroll')
-      }
-        categories.classList.remove('no-scroll');
-
+    html.addEventListener('mouseenter', () => {
+      return menu.classList.contains('open') ?
+      categories.classList.add('no-scroll') :
+      categories.classList.remove('no-scroll');
     });
 
-    dropdown.addEventListener('mouseleave', () => {
-      if (menu.classList.contains('open')){
-        categories.classList.add('no-scroll')
-      } else {
-        categories.classList.remove('no-scroll');
-      }
+    html.addEventListener('mouseleave', () => {
+      return menu.classList.contains('open') ?
+      categories.classList.add('no-scroll') :
+      categories.classList.remove('no-scroll');
     });
-
-
   }
 
   const toggleClose = () => {
@@ -62,7 +56,6 @@ const toggle = () => {
   close.addEventListener('click', toggleClose);
   html.addEventListener('click', handleDocumentClick);
   categories.addEventListener('click', toggleCategories);
-
 }
 
 toggle();
