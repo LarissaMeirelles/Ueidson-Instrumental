@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap');
 
 body {
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style: none;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   position: relative;
   background-color: #1f1f1f;
 }
@@ -23,22 +23,18 @@ body::-webkit-scrollbar-track {
   background-color: #bcbcbc; /* Cor da trilha da barra de rolagem */
 }
 
+
 html {
   transition: transform 0.3s ease-in-out;
 }
 
-main {
-  background-image: url("wallpaperr.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-}
 
 /*
   colors
   #dab028
   #1f1f1f
 */
+
 
 .container-navbar {
   width: 100%;
@@ -69,6 +65,8 @@ main {
   color: #dab028;
 }
 
+
+
 /* LOGO */
 
 .logo {
@@ -79,6 +77,9 @@ main {
   max-height: 120px;
   overflow: hidden;
 }
+
+
+
 
 /* SEARCH INPUT */
 
@@ -105,8 +106,8 @@ main {
 }
 
 .search-navbar::after {
-  content: "";
-  background-image: url("./search.svg");
+  content: '';
+  background-image: url('/search.svg');
   padding: 10.8px;
   position: absolute;
   top: 6px;
@@ -155,18 +156,18 @@ main {
   position: absolute;
   color: black;
   font-weight: bold;
-  padding: 0.5px;
+  padding: .5px;
   height: 18px;
   top: 20%;
   left: 100%;
   background-color: black;
 }
 
-.categories:hover .category {
+.categories:hover .category{
   color: #dab028;
 }
 
-.categories-dropdown {
+.categories-dropdown{
   position: absolute;
   top: 110%;
   left: 0;
@@ -176,9 +177,10 @@ main {
   height: 0;
   padding: 0;
   transition: height 0.3s ease-in-out;
-  box-shadow: 0 0.8px 4px #1f1f1f;
+  box-shadow: 0 .8px 4px #1f1f1f;
   outline: none;
   border: none;
+  z-index: 5;
 }
 
 .categories-dropdown.open {
@@ -186,7 +188,7 @@ main {
   flex-direction: column;
   width: 55%;
   height: 300px;
-  transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out ;
 }
 
 .container-categories-list {
@@ -201,7 +203,7 @@ main {
 }
 
 .categories-list {
-  font-size: 0.8em;
+  font-size: .8em;
 }
 
 .categories-list.no-exists {
@@ -227,11 +229,11 @@ main {
 .categories-list a::before {
   content: "";
   width: 0;
-  height: 0.5px;
+  height: .5px;
   background-color: #787878;
   transform: translateY(-50%);
   transition: width 0.3s ease-in-out;
-  margin-right: 5px;
+  margin-right: 5px ;
 }
 
 .categories-list a:hover::before {
@@ -251,9 +253,12 @@ main {
   background-color: #bcbcbc; /* Cor da trilha da barra de rolagem */
 }
 
+
+
+
 /* CART */
 
-.navbar-cart {
+.navbar-cart{
   display: flex;
   align-items: center;
   position: relative;
@@ -264,7 +269,7 @@ main {
   padding: 10px 10px 8px 10px;
   border: 2px solid white;
   border-radius: 50%;
-  margin: 0 15px 0 0;
+  margin: 0 15px 0 0 ;
   cursor: pointer;
 }
 
@@ -310,6 +315,9 @@ main {
   font-size: 13px;
 }
 
+
+
+
 /* DROPDOWN */
 
 .dropdown {
@@ -338,6 +346,7 @@ main {
   transform: translateX(-100%);
 }
 
+
 /* DROPDOWN tag <a> */
 
 .dropdown-content > li:nth-child(1) {
@@ -359,16 +368,17 @@ main {
   background-color: #dab028;
   transform: translateY(-50%);
   transition: width 0.3s ease-in-out;
-  margin-right: 5px;
+  margin-right: 5px ;
 }
 
 .dropdown-content li a:hover::before {
   width: 1rem;
 }
 
+
 /* ICON BURGUER */
 
-.burguer {
+.burguer{
   height: 25px;
   width: 28px;
   cursor: pointer;
@@ -379,6 +389,8 @@ main {
 .burguer:hover {
   height: 24px;
 }
+
+
 
 /* ICON CLOSE */
 
@@ -395,12 +407,16 @@ main {
   height: 27px;
 }
 
+
+
 /* NO SCROLL */
 
 .no-scroll {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
+
 
 /* Animation Item List */
 
@@ -435,7 +451,9 @@ main {
   .categories-dropdown.noExists {
     height: 50px;
   }
+
 }
+
 
 /* 900px */
 
@@ -445,16 +463,20 @@ main {
   }
 
   .categories-list.no-exists {
-    font-size: 0.8rem;
+    font-size: .8rem;
   }
   .categories-dropdown.noExists {
     height: 40px;
   }
+
 }
+
 
 /* 800px */
 
 @media (max-width: 800px) {
+
+
   .logo {
     width: 100px;
     height: 100px;
@@ -487,6 +509,8 @@ main {
     font-size: 12px;
   }
 
+
+
   .navbar-cart {
     display: flex;
     flex-direction: column;
@@ -501,24 +525,29 @@ main {
   }
 }
 
+
+
+
 /* 600px */
 
 @media (max-width: 600px) {
-  body::-webkit-scrollbar {
-    width: 8px; /* Largura da barra de rolagem */
-    display: none;
-  }
 
-  body::-webkit-scrollbar-thumb {
-    background-color: #1f1f1f; /* Cor do "thumb" da barra de rolagem */
-    /* border-radius: 4px; Arredondamento do "thumb" */
-    display: none;
-  }
 
-  body::-webkit-scrollbar-track {
-    background-color: #bcbcbc; /* Cor da trilha da barra de rolagem */
-    display: none;
-  }
+body::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1f1f1f; /* Cor do "thumb" da barra de rolagem */
+  /* border-radius: 4px; Arredondamento do "thumb" */
+  display: none;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #bcbcbc; /* Cor da trilha da barra de rolagem */
+  display: none;
+}
 
   .cart-floating {
     display: flex;
@@ -539,17 +568,22 @@ main {
     justify-content: space-between;
   }
 
+
   /* LOGO */
 
   .navbar-logo {
     order: 2;
   }
 
+
+
   /* CART */
 
   .navbar-cart {
     order: 3;
   }
+
+
 
   /* SEARCH INPUT */
 
@@ -568,8 +602,8 @@ main {
   }
 
   .search-navbar::after {
-    content: "";
-    background-image: url("/imgs/search.svg");
+    content: '';
+    background-image: url('/imgs/search.svg');
     padding: 10.8px;
     position: absolute;
     top: 6px;
@@ -582,12 +616,12 @@ main {
     display: none;
   }
 
-  .categories-dropdown {
+  .categories-dropdown{
     top: 105%;
     width: 70%;
     height: 0;
     padding: 0;
-    box-shadow: 0 0.8px 4px #1f1f1f;
+    box-shadow: 0 .8px 4px #1f1f1f;
   }
 
   .categories-dropdown.open {
@@ -608,7 +642,7 @@ main {
     align-items: center;
     text-decoration: none;
     color: #c8c7c7;
-    font-size: 0.8em;
+    font-size: .8em;
     padding-left: 5px;
   }
 
@@ -616,6 +650,8 @@ main {
     width: 70%;
     height: 45px;
   }
+
+
 
   /* DROPDOWN */
 
@@ -625,7 +661,9 @@ main {
     flex-direction: column;
   }
 
+
   .dropdown-content.open {
     display: flex;
   }
 }
+
