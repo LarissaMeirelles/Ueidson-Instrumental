@@ -107,7 +107,7 @@ html {
 
 .search-navbar::after {
   content: '';
-  background-image: url('/search.svg');
+  background-image: url('./search.svg');
   padding: 10.8px;
   position: absolute;
   top: 6px;
