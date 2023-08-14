@@ -10,7 +10,7 @@
 }
 
 .content-cards {
-  background-image: url('./wallpaper.jpg');
+  background: white;
   display: grid;
   grid-template-columns: .3fr auto;
   gap: 0 40px;
